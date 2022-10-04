@@ -149,7 +149,7 @@ export default function Footer() {
                   href="https://druzh.tech"
                   className="text-blueGray-500 hover:text-blueGray-800"
                 >
-                  ООО "Дружининъ"
+                  Дружинин 526098416225
                 </a>
               </div>
             </div>
