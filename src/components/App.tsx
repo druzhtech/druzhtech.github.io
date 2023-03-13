@@ -7,8 +7,9 @@ import {
   VStack, List, ListIcon, ListItem,
   Code, Icon,
   Grid, StackDivider,
-  theme,
+  theme
 } from "@chakra-ui/react"
+import {customtheme} from '../customtheme'
 import { AiFillGithub } from 'react-icons/ai'
 import { FaTelegram, FaConnectdevelop } from 'react-icons/fa'
 import { MdEmail, MdSecurity, MdSettings, MdCheckCircle, MdSchool } from 'react-icons/md'
@@ -29,12 +30,14 @@ export const App = () => (
         divider={<StackDivider borderColor='gray.200' />}
         align='center'
       >
+       
         <Box>
+          <br />
           <Logo />
         </Box>
         <Box>
           <Container>
-            <Heading as='h6' size='xs'>R&D Agency</Heading>
+            <Heading as='h5' size='sm'>R&D Agency</Heading>
           </Container>
         </Box>
         <Box>
