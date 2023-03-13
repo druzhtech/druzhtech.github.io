@@ -21,18 +21,22 @@ import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
 import { Container } from '@chakra-ui/react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import { Oko } from "./Oko"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
 
     <Container>
       <VStack
-        divider={<StackDivider borderColor='gray.200' />}
+        // divider={<StackDivider borderColor='gray.200' />}
         align='center'
       >
-       
         <Box>
           <br />
+          <Oko />
+        </Box>
+       
+        <Box>
           <Logo />
         </Box>
         <Box>
@@ -85,26 +89,30 @@ export const App = () => (
           </Container>
           </center>
         </Box>
-        <Box>
+        {/* <Box>
           <Container>partners</Container>
 
         </Box>
         <Box>
           <Container>projects</Container>
 
-        </Box>
+        </Box> */}
         <Box>
           <a href="mailto:druzhtech@yandex.com"><Icon as={MdEmail} /></a>
           <a href="https://t.me/didexbot"> <Icon as={FaTelegram} /></a>
+          <a href="https://github.com/druzhtech"> <Icon as={AiFillGithub} /></a>
 
         </Box>
-        <Box>
+        {/* <Box>
           <Container>
-            <a href="https://github.com/druzhtech"> <Icon as={AiFillGithub} /></a>
+            Swiss
           </Container>
-        </Box>
+        </Box> */}
         <Box>
           2023
+        </Box>
+        <Box>
+        <Oko transform={"rotate(180deg)"} />
         </Box>
       </VStack>
 
